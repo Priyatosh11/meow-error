@@ -1,40 +1,44 @@
 {
   "name": "meow-error",
   "displayName": "Meow Error",
-  "description": "Plays a meow sound when code or terminal errors occur",
+  "description": "Plays a cute meow sound whenever a code error occurs in VS Code.",
   "version": "0.0.1",
+  "publisher": "priyatosh-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Priyatosh11/meow-error"
+  },
+  "bugs": {
+    "url": "https://github.com/Priyatosh11/meow-error/issues"
+  },
+  "homepage": "https://github.com/Priyatosh11/meow-error#readme",
+  "license": "MIT",
   "engines": {
-  "vscode": "^1.80.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "error",
+    "sound",
+    "meow",
+    "fun",
+    "productivity"
   ],
   "activationEvents": [
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "meow-error.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "lint": "eslint src"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
-    "@types/vscode": "^1.109.0",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2",
+    "@types/vscode": "^1.80.0",
     "eslint": "^9.39.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
